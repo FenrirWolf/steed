@@ -2,6 +2,8 @@
 
 pub mod ext;
 // Rust 1.15.0
+pub mod fast_thread_local;
+// Rust 1.15.0
 pub mod fd;
 // Rust 1.15.0 (close...)
 pub mod fs;
@@ -16,6 +18,8 @@ pub mod pipe;
 pub mod process;
 pub mod os;
 pub mod rand;
+// Rust 1.15.0
+pub mod thread_local;
 pub mod time;
 // Rust 1.14.0
 pub mod net;

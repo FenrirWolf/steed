@@ -2,6 +2,8 @@
 pub mod io;
 // Rust 1.15.0 (close)
 pub mod net;
+// Rust 1.15.0
+pub mod thread_local;
 
 /// A trait for viewing representations from std types
 #[doc(hidden)]

@@ -1,7 +1,9 @@
 #![feature(alloc)]
 #![feature(allow_internal_unstable)]
 #![feature(asm)]
+#![feature(box_syntax)]
 #![feature(cfg_target_vendor)]
+#![feature(cfg_target_thread_local)]
 #![feature(collections)]
 #![feature(collections_bound)]
 #![feature(collections_range)]
@@ -25,6 +27,7 @@
 #![feature(slice_concat_ext)]
 #![feature(slice_patterns)]
 #![feature(staged_api)]
+#![feature(thread_local)]
 #![feature(try_from)]
 #![feature(unicode)]
 #![feature(unique)]
@@ -143,6 +146,9 @@ mod macros;
 
 pub mod sync;
 
+// Rust 1.15.0
+#[macro_use]
+pub mod thread;
 // Rust 1.15.0
 pub mod ascii;
 // Rust 1.15.0
